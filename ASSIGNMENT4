@@ -1,0 +1,51 @@
+//STUDENT’S NUMBER:ABIODUN TAOFEEK TIAMIYU
+//STUDENT’S NUMBER:21910091
+//COURSE CODE:IT526
+
+//COURSE TITLE:OPERATING SYSTEM &NETWORK SECURITY
+//
+
+import java.util.Scanner;
+
+public class Assignment4
+{
+ public static void main(String args[])
+ {		
+	int temp;
+	boolean isPrime=true;
+	Scanner scan= new Scanner(System.in);
+	System.out.println("ABIODUN TAOFEEK TIAMIYU:");
+	System.out.println("21910091:");
+	System.out.println("CMPE526:");
+	System.out.println("OPERATING SYSTEM AND NETWORK SECURITY:");
+	System.out.println("ASSIGNMENT IV:");
+	
+	System.out.println("Input any Prime number:");
+	//capture the input in an integer
+	int num=scan.nextInt();
+      scan.close();
+	for(int i=2;i<=num/2;i++)
+	{
+		while(num%i == 0) {
+            System.out.println(i+" ");
+            num = num/i;
+         }
+      }
+         temp=num%num;
+	
+	   {
+		   if(num >2) {
+		         System.out.println(num);
+	      isPrime=false;
+	     
+	
+	   }
+	
+	//If isPrime is true then the number is prime else not
+	if(isPrime)
+	   System.out.println(num + " is a Prime Number and the factors are:" + num);
+	else
+	   System.out.println(num + " is a composite factor and the factors are:" + num);
+ }
+}
+}
